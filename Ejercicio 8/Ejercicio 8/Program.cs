@@ -19,19 +19,19 @@ namespace ej
                     string[] estudiantes = new string[num_est];
 
                     //cargar y visualizar una matriz
-                    for (int i = 0; i < estudiantes.Length; i++) //for para filas
+                    for (int i = 0; i < num_est; i++) //for para filas
                     {
                         int num_filas = i + 1;
                         Console.Write("Estudiante " + num_filas + ": ");
-                        estudiantes[num_est] = Console.ReadLine();
+                        estudiantes[i] = Console.ReadLine();
                         StreamWriter.WriteLine(estudiantes);
                     }
 
                     //Visualizacion de matriz con datos ingresados
                     Console.WriteLine("\n********************** TABLA DE CONTROL *****************************\n");
-                    for (int i = 0; i < estudiantes.Length; i++)
+                    for (int i = 0; i < num_est; i++)
                     {
-                        Console.Write("\t" + estudiantes[num_est] + "\t");
+                        Console.Write("\t" + estudiantes[i] + "\t");
                     }
                     Console.Write("\n");
                 }
