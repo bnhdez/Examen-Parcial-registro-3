@@ -68,7 +68,7 @@ namespace Ejercicio_3
             Array.Sort(matriz1d);
             Array.Reverse(matriz1d);
             Console.WriteLine("Array After Sorting:\n");
-            foreach (int value in orden)
+            foreach (int value in matriz1d)
             {
                 Console.Write(value + " ");
             }
