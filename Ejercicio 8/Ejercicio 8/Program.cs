@@ -14,12 +14,12 @@ namespace ej
                     int num_est;
 
                     Console.WriteLine("Ingrese la cantidad de alumnos que se guardaran en el fichero: ");
-                    num_est = int.Parse(Console.ReadLine());
+                    num_est = Convert.ToInt32(Console.ReadLine());
 
                     string[] estudiantes = new string[num_est];
 
                     //cargar y visualizar una matriz
-                    for (int i = 0; i < num_est; i++) //for para filas
+                    for (int i = 0; i < estudiantes.Length; i++) //for para filas
                     {
                         int num_filas = i + 1;
                         Console.Write("Estudiante " + num_filas + ": ");
@@ -28,11 +28,11 @@ namespace ej
 
                     //Visualizacion de matriz con datos ingresados
                     Console.WriteLine("\n********************** TABLA DE CONTROL *****************************\n");
-                    for (int i = 0; i < num_est; i++)
+                    for (int i = 0; i < estudiantes.Length; i++)
                     {
                         Console.Write("\t" + estudiantes[num_est] + "\t");
-                        Console.Write("\n");
                     }
+                    Console.Write("\n");
                 }
             }
         }
