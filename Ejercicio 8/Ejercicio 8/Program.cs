@@ -24,6 +24,7 @@ namespace ej
                         int num_filas = i + 1;
                         Console.Write("Estudiante " + num_filas + ": ");
                         estudiantes[num_est] = Console.ReadLine();
+                        StreamWriter.WriteLine(estudiantes);
                     }
 
                     //Visualizacion de matriz con datos ingresados
