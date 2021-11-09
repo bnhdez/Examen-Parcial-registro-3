@@ -19,16 +19,16 @@ namespace ej
                     string[] estudiantes = new string[num_est];
 
                     //cargar y visualizar una matriz
-                    for (int filas = 0; filas < num_est; filas++) //for para filas
+                    for (int i = 0; i < num_est; i++) //for para filas
                     {
-                        int num_filas = filas + 1;
+                        int num_filas = i + 1;
                         Console.Write("Estudiante " + num_filas + ": ");
                         estudiantes[num_est] = Console.ReadLine();
                     }
 
                     //Visualizacion de matriz con datos ingresados
                     Console.WriteLine("\n********************** TABLA DE CONTROL *****************************\n");
-                    for (int filas = 0; filas < num_est; filas++)
+                    for (int i = 0; i < num_est; i++)
                     {
                         Console.Write("\t" + estudiantes[num_est] + "\t");
                         Console.Write("\n");
