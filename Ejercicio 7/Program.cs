@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace Ejercicio_3
 {
@@ -40,7 +42,37 @@ namespace Ejercicio_3
                 Console.Write("\n");
             }
 
-            
+            //convertir a array 1d
+
+            Console.WriteLine("\nconvertir a matriz 1d : ");
+
+            int i = 0, j = 0, f = 0, k = 0;
+            int zvalue = fil * col;
+            int[] matriz1d = new int[zvalue];
+
+            //total de datos para conv a 1d
+
+            //convertir array 2d a 1d bajo el limite de filas * columnas, puesto que es 1d
+            for (int filas = 0; filas < fil; filas++)
+            {
+                for (int columnas = 0; columnas < col; columnas++)
+                {
+                    matriz1d[k++] = orden[filas, columnas];
+                }
+            }
+            for (int filas = 0; filas < fil * col; filas++)
+            {
+                Console.WriteLine("elemento[{0}] = {1} \t", filas, matriz1d[filas]);
+            }
+
+            Array.Sort(matriz1d);
+            Array.Reverse(matriz1d);
+            Console.WriteLine("Array After Sorting:\n");
+            foreach (int value in orden)
+            {
+                Console.Write(value + " ");
+            }
+
         }
     }
 }
