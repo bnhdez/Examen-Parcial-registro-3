@@ -17,14 +17,14 @@ namespace ej
                     Console.WriteLine("Ingrese la cantidad de alumnos que se guardaran en el fichero: ");
                     num_est = int.Parse(Console.ReadLine());
 
-                    int[] estudiantes = new int[num_est];
+                    string[] estudiantes = new string[num_est];
 
                     //cargar y visualizar una matriz
                     for (int filas = 0; filas < num_est; filas++) //for para filas
                     {
                         int num_filas = filas + 1;
                         Console.Write("Estudiante " + num_filas + ": ");
-                        estudiantes[num_est] = int.Parse(Console.ReadLine());
+                        estudiantes[num_est] = Console.ReadLine();
                     }
 
                     //Visualizacion de matriz con datos ingresados
