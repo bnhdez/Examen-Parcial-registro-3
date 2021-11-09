@@ -7,12 +7,11 @@ namespace ej
     {
         static void Main(string[] args)
         {
-            string id;
             using (var FileStream = new FileStream("C:/Users/boris/Desktop/UNIVERSIDAD/CICLO 2/PROGRAMACION ESTRUCTURADA/PARCIAL registro 3/Ejercicio 7/Ejercicio 8/fichero.txt", FileMode.CreateNew, FileAccess.Write))
             {
                 using (var StreamWriter = new StreamWriter(FileStream))
                 {
-                    int i = 1, num_est;
+                    int num_est;
 
                     Console.WriteLine("Ingrese la cantidad de alumnos que se guardaran en el fichero: ");
                     num_est = int.Parse(Console.ReadLine());
