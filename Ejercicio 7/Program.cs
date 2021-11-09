@@ -44,9 +44,9 @@ namespace Ejercicio_3
 
             //convertir a array 1d
 
-            Console.WriteLine("\nconvertir a matriz 1d : ");
+            Console.WriteLine("\nconvertir a matriz 1d : \n");
 
-            int i = 0, j = 0, f = 0, k = 0;
+            int k = 0;
             int zvalue = fil * col;
             int[] matriz1d = new int[zvalue];
 
@@ -65,9 +65,10 @@ namespace Ejercicio_3
                 Console.WriteLine("elemento[{0}] = {1} \t", filas, matriz1d[filas]);
             }
 
+            //Resultados de ordenamiento
             Array.Sort(matriz1d);
             Array.Reverse(matriz1d);
-            Console.WriteLine("Array After Sorting:\n");
+            Console.WriteLine("\n******************DATOS EN ORDEN DESCENDENTE***************:\n");
             foreach (int value in matriz1d)
             {
                 Console.Write(value + " ");
