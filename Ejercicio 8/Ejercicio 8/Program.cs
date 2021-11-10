@@ -34,11 +34,6 @@ namespace ej
                         StreamWriter.WriteLine(estudiantes[i]);
                     }
                     Console.Write("\n");
-
-                    StreamReader sr = new StreamReader(FileStream);
-
-                    string todo = sr.ReadToEnd();
-                    Console.WriteLine(todo);
                 }
             }
 
