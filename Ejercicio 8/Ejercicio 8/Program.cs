@@ -34,7 +34,19 @@ namespace ej
                         StreamWriter.WriteLine(estudiantes[i]);
                     }
                     Console.Write("\n");
+
+                    StreamReader sr = new StreamReader(FileStream);
+
+                    string todo = sr.ReadToEnd();
+                    Console.WriteLine(todo);
                 }
+            }
+
+            using (var fs = new FileStream("C:/Users/boris/Desktop/UNIVERSIDAD/CICLO 2/PROGRAMACION ESTRUCTURADA/PARCIAL registro 3/Ejercicio 7/Ejercicio 8/fichero.txt", FileMode.Open, FileAccess.Read))
+            {
+                StreamReader sr = new StreamReader(fs);
+                string todo = sr.ReadToEnd();
+                Console.WriteLine(todo);
             }
         }
     }
