@@ -26,11 +26,8 @@ namespace ej
                         estudiantes[i] = Console.ReadLine();
                     }
 
-                    //Visualizacion de matriz con datos ingresados
-                    Console.WriteLine("\n********************** TABLA DE CONTROL *****************************\n");
                     for (int i = 0; i < num_est; i++)
                     {
-                        Console.Write("\t" + estudiantes[i] + "\t");
                         StreamWriter.WriteLine(estudiantes[i]);
                     }
                     Console.Write("\n");
@@ -39,6 +36,9 @@ namespace ej
 
             using (var fs = new FileStream("C:/Users/boris/Desktop/UNIVERSIDAD/CICLO 2/PROGRAMACION ESTRUCTURADA/PARCIAL registro 3/Ejercicio 7/Ejercicio 8/fichero.txt", FileMode.Open, FileAccess.Read))
             {
+                //Visualizacion de matriz con datos ingresados
+                Console.WriteLine("\n********************** ESTUDIANTES *****************************\n");
+
                 StreamReader sr = new StreamReader(fs);
                 string todo = sr.ReadToEnd();
                 Console.WriteLine(todo);
